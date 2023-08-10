@@ -22,7 +22,7 @@ function Captioning() {
 
   return (
       <div className="caption">
-        <p>{caption}</p>
+        <h1>{caption}</h1>
       </div>
   );
 }
