@@ -1,0 +1,30 @@
+import React, { useState, useEffect } from 'react';
+import annyang from 'annyang';
+
+function Captioning() {
+  const [caption, setCaption] = useState('');
+
+  useEffect(() => {
+    if (annyang) {
+      annyang.addCallback('result', (userSaid) => {
+        setCaption(userSaid[0]); // Display only the latest spoken phrase
+      });
+
+      annyang.start();
+    }
+
+    return () => {
+      if (annyang) {
+        annyang.abort();
+      }
+    };
+  }, []);
+
+  return (
+      <div className="caption">
+        <p>{caption}</p>
+      </div>
+  );
+}
+
+export default Captioning;

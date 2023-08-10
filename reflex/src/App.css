@@ -1,0 +1,31 @@
+.App {
+  background-color: #282c34;
+  min-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.title{
+  font-size: xx-large;
+  color: aquamarine;
+  float: left;
+  margin-left: 100px;
+}
+
+.time{
+  font-size: xx-large;
+  color: aquamarine;
+  float: right;
+  margin-right: 100px;
+}
+
+.App-header {
+  background-color: #282c34;
+  width: 100%;
+}
+
+.caption{
+  color: aquamarine;
+  margin-left: 100px;
+}
