@@ -25,19 +25,6 @@ const YouTubeMusicPlayer = () => {
       <h2>YouTube Music Player</h2>
       <div id="youtube-player"></div>
       <button onClick={handlePlayPause}>{isPlaying ? 'Pause' : 'Play'}</button>
-
-      <script>
-        const onYouTubeIframeAPIReady = () => {
-          playerRef.current = new YT.Player('youtube-player', {
-            height: '360',
-            width: '640',
-            videoId: videoId,
-            events: {
-              onReady: onPlayerReady,
-            },
-          });
-        };
-      </script>
     </div>
   );
 };
