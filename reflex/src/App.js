@@ -1,6 +1,8 @@
 import './App.css';
 import Clock from './Clock';
 import Captioning  from './Captioning';
+import LofiPlayer from './Music';
+import GitHubProfile from './Github';
 
 function App() {
   return (
@@ -8,16 +10,16 @@ function App() {
       <header className="App-header">
         <div className="grid-container">
           <div className="grid-item">
-            <div className="github">Github</div>
+            <GitHubProfile/>
           </div>
           <div className="grid-item">
-            <div className="clock"><Clock/></div>
+            <Clock/>
           </div>
           <div className="grid-item">
-            <div className="caption">Captioning</div>
+            <Captioning/>
           </div>
           <div className="grid-item">
-            <div className="lofi">Lofi</div>
+            <LofiPlayer/>
           </div>
         </div>
       </header>
