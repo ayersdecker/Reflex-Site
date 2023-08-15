@@ -1,17 +1,27 @@
-import React from 'react';
+
+import React, { useState } from 'react';
 
 const LofiPlayer = () => {
-  const lofi = '4xDzrJKXOOY';
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  const startPlayback = () => {
+    setIsPlaying(true);
+  };
 
   return (
     <div className="lofi">
-      <iframe
-        width="100%"
-        height="100%"
-        src={`https://www.youtube.com/embed/${lofi}`}
-        title=""
-        allowFullScreen
-      ></iframe>
+      {!isPlaying ? (
+        <button onClick={startPlayback}>Start Lofi Music</button>
+      ) : (
+        <iframe
+          width="100%"
+          height="100%"
+          src="https://www.youtube.com/embed/4xDzrJKXOOY"
+          title=""
+          frameBorder="0"
+          allowFullScreen
+        ></iframe>
+      )}
     </div>
   );
 };
