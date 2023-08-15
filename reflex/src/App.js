@@ -21,7 +21,7 @@ function App() {
             <div className='caption'><Captioning/></div>
           </div>
           <div className="grid-item">
-            <div className='lofi'><YouTubeMusicPlayer/></div>
+            <div className='lofi'><LofiPlayer/></div>
           </div>
         </div>
       </header>
