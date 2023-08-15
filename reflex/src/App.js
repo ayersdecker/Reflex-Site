@@ -10,16 +10,16 @@ function App() {
       <header className="App-header">
         <div className="grid-container">
           <div className="grid-item">
-            <GitHubProfile/>
+            <div className='github'><GitHubProfile/></div>
           </div>
           <div className="grid-item">
-            <Clock/>
+            <div className='clock'><Clock/></div>
           </div>
           <div className="grid-item">
-            <Captioning/>
+            <div className='caption'><Captioning/></div>
           </div>
           <div className="grid-item">
-            <LofiPlayer/>
+            <div className='lofi'><LofiPlayer/></div>
           </div>
         </div>
       </header>
