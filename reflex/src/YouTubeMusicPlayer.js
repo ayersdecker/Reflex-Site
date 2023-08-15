@@ -1,29 +1,30 @@
-import React, { useRef, useState } from 'react';
+
+
+import React, { useState } from 'react';
 
 const YouTubeMusicPlayer = () => {
   const [isPlaying, setIsPlaying] = useState(false);
-  const playerRef = useRef(null);
-  const videoId = '4xDzrJKXOOY';
+  const audioSrc = 'https://www.youtube.com/watch?v=4xDzrJKXOOY'; // Replace with the URL of the YouTube audio
 
   const handlePlayPause = () => {
-    if (playerRef.current) {
+    const audioElement = document.getElementById('youtube-audio');
+
+    if (audioElement) {
       if (isPlaying) {
-        playerRef.current.pauseVideo();
+        audioElement.pause();
       } else {
-        playerRef.current.playVideo();
+        audioElement.play();
       }
       setIsPlaying(!isPlaying);
     }
   };
 
-  const onPlayerReady = event => {
-    // You can perform additional actions when the player is ready
-  };
-
   return (
-    <div className="youtube-music-player">
-      <h2>YouTube Music Player</h2>
-      <div id="youtube-player"></div>
+    <div className="youtube-audio-player">
+      <h2>YouTube Audio Player</h2>
+      <audio id="youtube-audio" controls src={audioSrc}>
+        Your browser does not support the audio element.
+      </audio>
       <button onClick={handlePlayPause}>{isPlaying ? 'Pause' : 'Play'}</button>
     </div>
   );
