@@ -8,16 +8,16 @@ function App() {
       <header className="App-header">
         <div className="grid-container">
           <div className="grid-item">
-            <div className="title">Title</div>
+            <div className="github">Github</div>
           </div>
           <div className="grid-item">
-            <div className="time">Time</div>
+            <div className="clock"><Clock/></div>
           </div>
           <div className="grid-item">
             <div className="caption">Captioning</div>
           </div>
           <div className="grid-item">
-            <div className="clock">Clock</div>
+            <div className="lofi">Lofi</div>
           </div>
         </div>
       </header>
