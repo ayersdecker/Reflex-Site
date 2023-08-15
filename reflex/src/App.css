@@ -3,21 +3,8 @@
   min-width: 100%;
   min-height: 100vh;
   display: flex;
-  flex-wrap: wrap;
-}
-
-.title{
-  font-size: xx-large;
-  color: aquamarine;
-  float: left;
-  margin-left: 100px;
-}
-
-.time{
-  font-size: xx-large;
-  color: aquamarine;
-  float: right;
-  margin-right: 100px;
+  justify-content: center;
+  align-items: center;
 }
 
 .App-header {
@@ -25,8 +12,38 @@
   width: 100%;
 }
 
-.caption{
-  color: aquamarine;
-  float: left;
-  margin-left: 100px;
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
 }
+
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #111;
+  border: 1px solid aquamarine;
+}
+
+.title,
+.time,
+.caption,
+.clock {
+  font-size: xx-large;
+  color: aquamarine;
+}
+
+.title,
+.time {
+  float: none;
+  text-align: center;
+}
+
+.caption,
+.clock {
+  text-align: center;
+}
+
