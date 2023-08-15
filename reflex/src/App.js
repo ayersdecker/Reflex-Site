@@ -4,6 +4,7 @@ import Captioning  from './Captioning';
 import LofiPlayer from './Music';
 import GitHubProfile from './Github';
 import WeatherWidget from './Weather';
+import YouTubeMusicPlayer from './YouTubeMusicPlayer';
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
             <div className='caption'><Captioning/></div>
           </div>
           <div className="grid-item">
-            <div className='lofi'><LofiPlayer/></div>
+            <div className='lofi'><YouTubeMusicPlayer/></div>
           </div>
         </div>
       </header>
