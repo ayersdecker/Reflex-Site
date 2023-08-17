@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <div class="container">
     <header class="header">
-      <h1><Clock/></h1>
+      <h2><Clock/></h2>
     </header>
     
     <main>
