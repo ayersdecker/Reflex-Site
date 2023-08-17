@@ -1,56 +1,45 @@
-.App {
-  background-color: #000;
-  min-width: 100%;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.App-header {
-  background-color: #000;
+.container {
   width: 100%;
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
   padding: 20px;
-  width: 100%;
-  height: 100%;
+  box-sizing: border-box;
 }
 
-.grid-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #111;
-  border: 1px solid aquamarine;
-}
-
-.github,
-.lofi,
-.caption,
-.clock {
-  font-size: xx-large;
-  color: aquamarine;
-}
-
-.github,
-.lofi {
-  float: none;
+.header {
   text-align: center;
+  padding: 20px 0;
+  background-color: #333;
+  color: #fff;
 }
 
-.caption,
-.clock {
-  text-align: center;
+.post {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
 }
+
+.post-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.post-content {
+  font-size: 16px;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #333;
+  color: #fff;
+}
+
 
