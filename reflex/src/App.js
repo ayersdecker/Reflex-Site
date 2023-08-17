@@ -17,7 +17,7 @@ function App() {
     <main>
       <article class="post">
         <h2 class="Time Module">Post Title 1</h2>
-        <p class="post-content"><Caption/></p>
+        <p class="post-content"><Captioning/></p>
       </article>
       
       <article class="post">
