@@ -25,7 +25,6 @@ function App() {
         <p class="post-content">This is the content of the second post. Phasellus fermentum, elit et consectetur vehicula, libero sapien vehicula felis, vel bibendum nulla purus sed orci.</p>
       </article>
       
-      <!-- Add more posts as needed -->
       
     </main>
     
