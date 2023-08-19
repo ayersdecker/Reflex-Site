@@ -18,7 +18,6 @@ function App() {
     </main>
     
     <footer class="footer">
-      <p>&copy; 2023 Decker Ayers</p>
     </footer>
   </div>
     </div>
