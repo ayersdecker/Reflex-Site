@@ -10,10 +10,6 @@ function App() {
   return (
     <div className="App">
       <div class="container">
-    <header class="header">
-      <h2><Clock/></h2>
-    </header>
-    
     <main>
       <article class="post">
         <p class="post-content"><Captioning/></p>
