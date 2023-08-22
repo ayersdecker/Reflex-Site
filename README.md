@@ -3,13 +3,17 @@
 
 <hr>
 
+## Current State
+
+The site currently has only captions enabled. This has been done to showcase a technological prototype for a different project. The site will refer back to its full form around September 7th, 2023. Site is operational, captions working.
+
 ## What is this website for?
 
 I am using this website to learn about generating components for the React.js Framework. I will slowly be filling the site out to work as a digital multitool for deaf/hh programmers.
 
-## Current Tools
+## Tools
 
-- [x] Captions
+- [x] Captions ( Single Request )
 - [ ] Clock [Disabled]
 - [ ] LoFi Music Streamer [Disabled]
 - [ ] Weather [Disabled]
