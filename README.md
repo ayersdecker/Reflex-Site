@@ -9,10 +9,11 @@ I am using this website to learn about generating components for the React.js Fr
 
 ## Current Tools
 
-- [x] Captions (English - Mini)
-- [x] Clock
-- [ ] LoFi Music Streamer
-- [ ] Jot Pad / Todo list (Temp)
+- [x] Captions
+- [ ] Clock [Disabled]
+- [ ] LoFi Music Streamer [Disabled]
+- [ ] Weather [Disabled]
+- [ ] Jot Pad / Todo list
 - [ ] C# Console Compiler / Debug Embed
 
 <hr>
